@@ -1,7 +1,9 @@
 import { useState } from 'react';
 import { TextField, Button } from '@mui/material';
+import { useNavigate } from 'react-router-dom';
 
 function UserForm()  {
+  const navigate = useNavigate();
   const [name, setName] = useState('');
   const [phone, setPhone] = useState('');
   const [email, setEmail] = useState('');
@@ -10,7 +12,7 @@ function UserForm()  {
     e.preventDefault();
     const userDetails = { name, phone, email };
     localStorage.setItem('userDetails', JSON.stringify(userDetails));
-    window.location.href = '/second-page';
+    navigate('/second-page');
   };
 
   return (
