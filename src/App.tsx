@@ -7,7 +7,7 @@ function App() {
 
       <Routes>
         <Route path="/" element={<UserForm/>} />
-        <Route path="/second-page" element={<SecondPage/>} />
+        <Route path="/second" element={<SecondPage/>} />
       </Routes>
   );
 };

@@ -9,8 +9,8 @@ function SecondPage() {
   useEffect(() => {
     const userDetails = localStorage.getItem('userDetails');
     if (!userDetails) {
-      navigate('/');
       alert('You must enter your details before accessing this page.');
+      navigate('/');
     }
   }, [navigate]);
 

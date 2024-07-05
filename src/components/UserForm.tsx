@@ -12,7 +12,7 @@ function UserForm()  {
     e.preventDefault();
     const userDetails = { name, phone, email };
     localStorage.setItem('userDetails', JSON.stringify(userDetails));
-    navigate('/second-page');
+    navigate('/second');
   };
 
   return (
