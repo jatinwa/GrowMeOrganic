@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { departments } from '../data/departments';
 import { Department } from '../models/Department';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';

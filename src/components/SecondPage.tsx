@@ -1,6 +1,4 @@
-'use client'
-
-import React, { useEffect } from 'react';
+import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import DepartmentList from './DepartmentList';
 import PostTable from './PostTable';
